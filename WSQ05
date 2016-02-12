@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main (){
+
+  double c, f;
+
+  cout << "This programm will convert the temperature that you will provide in Fahrenheit, into Celsius. "<< endl;
+  cout << "Give me the temperature in Fahrenheit: ";
+  cin >> f;
+  c = 5 * (f - 32)/9;
+  cout << "The temperature in Fahrenheit is ";
+  cout << f;
+  cout << ", and in Celsius is ";
+  cout << c << endl;
+  if (c >= 100){
+    cout << "The water boils at this temperature, under typical conditions of presure and at the sea level." << endl;
+  }
+  else {
+    cout << "The water doesn't boil at this temperature, under typical conditions of presure and at the sea level."<< endl ;
+
+  }
+  return 0;
+
+}
