@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int superpower(int a, int b){
+  int x = 1;
+  int n = 0;
+
+  do {
+    x = x * a ;
+    n = n + 1;
+
+  } while(n < b);
+  return x;
+}
+
+int main (){
+  int a, b;
+
+  cout << "You will give two numbers. I will give you the result of the first number raised to the power of the second."<< endl;
+  cout << "Give me the first number: ";
+  cin >> a;
+  cout << "Give me the second number: ";
+  cin >> b;
+  cout << "The result of "<< a << " ^ " << b << " = " << superpower(a,b) << endl;
+  return 0;
+
+}
