@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int x, y, times;
+  srand(time(NULL));
+  x = rand()%100;
+
+  cout << "Hello. We are going to play  a game called: Guess the right number." << endl;
+  times = 7;
+  do {
+    cout << "Tell me a number between 1-100." ;
+    cin >> y;
+    if (x>y) {
+      cout <<"Your number "<< y << " is lower. Try again with a higher number."<< endl;
+      times = times - 1;
+
+    } else  if (x<y) {
+      cout << "Your number "<< y << " is higher. Try again with a lower number."<< endl;
+      times = times - 1;
+    } else
+
+  times = times - 1;
+
+} while(times > 0 && x != y);
+  if (x == y) {
+    cout << "Crongratulations. You are correct." <<endl;
+  } else {
+    cout << "Sorry. You run out of tries. You suck at this." << endl;
+  }
+return 0;
+}
+
