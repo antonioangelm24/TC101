@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void stars(int a) {
+  int n;
+  n = 0;
+
+  do {
+    cout << "*";
+    n = n + 1;
+
+  } while(n<a);
+  cout << endl;
+}
+
+int main(){
+  int a;
+  cout << "This programm will print the number of stars - * - that you type. " << endl;
+  cout << "Give me the number";
+  cin >> a;
+  stars(a);
+
+  return 0;
+}
