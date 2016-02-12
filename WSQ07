@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int y, z, n;
+  double x;
+
+  cout << "This programm will give you the sum of a range of numbers." << endl;
+  cout << "Give me the first number of the range.. ";
+  cin >> y ;
+  cout << "Give me the last number of the range.. ";
+  cin >> z ;
+  x = y;
+  n = y;
+
+  do {
+    y = (y + 1) ;
+    x = (x + y) ;
+
+  } while(y < z);
+  cout << " The sum from " << n << " to " << z << " is = " << x << endl;
+  return 0;
+
+}
