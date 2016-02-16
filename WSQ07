@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-  int y, z, n;
-  double x;
+  int y, z, x;
 
   cout << "This programm will give you the sum of a range of numbers." << endl;
   cout << "Give me the first number of the range.. ";
@@ -10,7 +9,6 @@ int main(){
   cout << "Give me the last number of the range.. ";
   cin >> z ;
   x = y;
-  n = y;
 
   do {
     y = (y + 1) ;
