@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int distance(int x1,int y1,int x2,int y2) {
+  float v;
+  int xf, yf;
+
+  xf = (x2 - x1);
+  yf = (y2 - y1);
+  v = sqrt((xf*xf)+(yf*yf));
+  return v;
+  cout << endl;
+
+}
+int main(){
+  int x1, y1, x2, y2;
+  cout << "This programm will give you the distance between two points."<< endl;
+  cout << "Give me the first point. (Fist x and then y)" ;
+  cin >> x1;
+  cin >> y1;
+  cout << "Give me the seconf point. (Fist x and then y)";
+  cin >> x2;
+  cin >> y2;
+  cout << "The distance between the 2 points is "<< distance(x1, y1, x2, y2)<< endl;
+  return 0;
+
+}
