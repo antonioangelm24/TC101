@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+int GCD(int A, int B){
+  float r = 0, q = 0;
+  if ((A == 0) && (B == 0)) {
+    return cout << "ERROR! This is one is not defined. Because you can't divide anything by zero"<< endl;
+  }
+  if (A==0) {
+    return B;
+  }
+  if (B==0) {
+    return A;
+  }
+  if (A > B) {
+    do {
+      q = (A/B);
+      r = (A%B);
+      A = B;
+      B = r;
+
+    } while(B != 0);
+    return A;
+
+  }
+  if (B > A) {
+    do {
+      q = (B/A);
+      r = (B%A);
+      B = A;
+      A = r;
+
+    } while(A != 0);
+    return B;
+  }
+  return 0;
+}
+int main(){
+  int A, B;
+  cout << "This program will give you the GCD of the 2 numbers you'll provide"<< endl;
+  cout << "Give the first number ";
+  cin >> A;
+  cout << "Give the second number ";
+  cin >> B;
+  cout << "The GCD of A and B is " << GCD(A, B);
+  cout << endl;
+
+  return 0;
+
+}
