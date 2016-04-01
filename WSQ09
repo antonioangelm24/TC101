@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int factorial(int n){
+  int i = 1, x = 1;
+  do {
+    x = x * i;
+    i++;
+  } while(i <= n);
+return x;
+
+
+}
+
+int main(){
+  int n, answer;
+  cout << "Give me a number so I can give you it's factorial: ";
+  cin >> n;
+  answer = factorial(n);
+  cout << "The factorial number of "<<n<<" is: "<< answer <<endl;
+  return 0;
+}
