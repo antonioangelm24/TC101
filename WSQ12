@@ -1,36 +1,36 @@
 #include <iostream>
-#include <string>
 #include <fstream>
+#include <string>
 using namespace std;
-
-int find_word(string pal, string tipo){
-  string line;
-  int cont=0;
-  ifstream myfile(tipo.c_str());
-  //string myfile(tipo);
+int find_word(string word, string sample){
+  std::string line;
+  int count;
+  ifstream myfile(sample);
   if (myfile.is_open())
   {
+    count=0;
+
     while(getline(myfile,line)){
-      if(line.compare(pal)==0){
-        cont++;
+      if(line.compare(word)==0){
+        count++;
       }
     }
     myfile.close();
   }
     else {
-  cout<<"no se encontro o no se pudo habrir el archivo"<<endl;
+  cout<<"Unable to open file"<<endl;
   }
-  cout<<"la palabra esta: "<<cont<<endl;
-  return cont;
+  cout<<"The occurrences of the word you typed are: "<<count<<endl;
+  return count;
 }
 
 int main(){
-  string pal, tipo, line;
+  string word, sample, line;
   int count;
-  cout<<"la palabra que busca"<<endl;
-  cin>>pal;
-  cout<<"ingresa el nombre y extension o tipo de archivo que buscas"<<endl;
-  cin>>tipo;
-  find_word(pal, tipo);
-return 0;
+  cout<<"Please type a word which is in your file"<<endl;
+  cin>>word;
+  cout<<"Now, please type the name of your file with the extension (Example: Hello.txt, make sure it is a text file)"<<endl;
+  cin>>sample;
+  find_word(word, sample);
+  return 0;
 }
