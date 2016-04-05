@@ -29,7 +29,7 @@ int main(){
   int count;
   cout<<"la palabra que busca"<<endl;
   cin>>pal;
-  cout<<"ingresa el nombre y extecion o tipo de archivo que buscas"<<endl;
+  cout<<"ingresa el nombre y extension o tipo de archivo que buscas"<<endl;
   cin>>tipo;
   find_word(pal, tipo);
 return 0;
