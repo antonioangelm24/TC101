@@ -28,7 +28,7 @@ int main(){
   string word, tipo, line;
   int count;
   cout<<"Ingrese la palabra que busca"<<endl;
-  cin>>pal;
+  cin>>word;
   cout<<"Dime el nombre del texto junto con su tipo de archivo pegado: "<<endl;
   cin>>tipo;
   find_word(pal, tipo);
