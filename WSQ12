@@ -31,6 +31,6 @@ int main(){
   cin>>word;
   cout<<"Dime el nombre del texto junto con su tipo de archivo pegado: "<<endl;
   cin>>tipo;
-  find_word(pal, tipo);
+  find_word(word, tipo);
 return 0;
 }
