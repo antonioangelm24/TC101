@@ -241,7 +241,7 @@ int main(int argc, char* argv[]) {
   populateBoardFromFile(theBoard,filename);
 
   cout << "Welcome to the Game of Sudoku" << endl;
-  // Herecou you provide a menu to the user to do what they want
+  // Here you provide a menu to the user to do what they want
   // The options are:
   //    print (call the printBoard function)
   //    write (ask user what number they want to add and where), must accept op4y legal values
@@ -255,17 +255,17 @@ int main(int argc, char* argv[]) {
 
          //cout<<"="<<blue<<"=================================================="; //This line and the next one is to print the first blue lines
 
-         cout<<blue<<"1) History  "<< endl;
+         cout<<blue<<"- History  "<< endl;
          cout<<reset;
-         cout<<"2) Instructions "<<endl;
-         cout<<red<<"3) Print "<<endl;
+         cout<<"- Instructions "<<endl;
+         cout<<red<<"- Print "<<endl;
          cout<<reset;
-         cout<<green<<"4) Write "<<endl;
+         cout<<green<<"- Write "<<endl;
          cout<<reset;
-         cout<<blue<<"5) Erase "<<endl;
+         cout<<blue<<"- Erase "<<endl;
          cout<<reset;
-         cout<<"6) Quit "<<endl;
-         cout<<green<<"7) Again"<<endl;
+         cout<<"- Quit "<<endl;
+         cout<<green<<"- Again"<<endl;
          cout<<reset;
          cout<<endl;
          cout<<endl;
